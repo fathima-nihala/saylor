@@ -1,0 +1,599 @@
+
+.brdr {
+  /* margin: 0px 20px; */
+  z-index: 50;
+  width: 100%;
+
+}
+
+.sick{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(214, 103, 196, 0.1); /* Example shadow, adjust as needed */
+    background-color: #ffffff; /* Example background color, adjust as needed */
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-main {
+  /* padding: 5px; */
+  z-index: 40;
+  background-color: white;
+
+
+}
+
+.nav-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* Distribute items with space between them */
+}
+
+.content {
+  color: black;
+}
+
+.btn {
+  font-family: 'Amarante';
+  font-size: 20px;
+}
+
+.btn:hover {
+  color: #eb9c5c;
+}
+
+.content:hover {
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.search-button {
+  border: none;
+  /* width: 20%; */
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(236, 236, 236);
+}
+
+.search-button input {
+  width: 240px;
+  border: none;
+  outline: none;
+  background-color: rgb(236, 236, 236);
+}
+
+.logo h1 {
+  margin-right: 20px;
+}
+
+.logo h1 {
+  font-family: 'Covered By Your Grace';
+  font-size: 40px;
+}
+
+.s {
+  color: #53917e;
+  animation: animateLetter 2s ease-in-out infinite;
+}
+
+@keyframes animateLetter {
+
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(-10px);
+    color: #53917e;
+  }
+
+  100% {
+    opacity: 4;
+    transform: translateY(0);
+    color: #eb9c5c;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(236, 236, 236);
+  border-radius: 50px;
+}
+
+.drop-button {
+  padding: 7px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 50px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .drop-button {
+  border: 1px solid #eb9c5c;
+}
+
+
+.cart {
+  border-radius: 50px;
+  padding: 7px;
+  background-color: rgb(236, 236, 236);
+  border: none;
+  margin-left: 20px;
+}
+
+.cart:hover {
+  border: 1px solid #eb9c5c;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+}
+
+/* ---------nav-main----------- */
+
+.saylore-main {
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin-top: 20px;
+  background-image: linear-gradient(#f8b783, #53917e);
+  height: 500px;
+  margin-left: 10px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.text {
+  display: block;
+  color: black;
+}
+
+.saylor-text {
+  font-family: 'Amarante';
+  font-size: 40px;
+  margin-left: 7px;
+}
+
+.saylor-text-sub {
+  font-family: 'Amarante';
+  font-size: 40px;
+  margin-left: 190px;
+}
+
+.saylore-main img {
+  margin-left: 250px;
+  margin-top: 49px;
+}
+
+/* ----------------saylor-main------ */
+.saylore-main-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+  padding-top: 30px;
+  justify-content: space-around;
+
+}
+
+.saylore-sub {
+  display: block;
+  flex-direction: column;
+  border-radius: 50px;
+
+}
+
+.saylor-sub-image img {
+  border-radius: 50px;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.saylor-sub-image img:hover {
+  box-shadow: 0 0 10px rgba(125, 125, 123, 0.5);
+
+}
+
+/*  */
+.catagories {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.catagies-contents {
+  background-color: white;
+  border: none;
+}
+
+.catagies-contents a {
+  text-decoration: none;
+  color: #53917e;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.17em;
+  /* font-family: 'inter_regular,fallback-inter_regular,Arial,sans-serif'; */
+  font-size: 20px;
+}
+
+.catagies-contents a:hover {
+  color: #eb9c5c;
+}
+/* --------------------------saylor-collecions------------ */
+.saylore-collections {
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+/* --------------sayloreBody.css----------------------------- */
+.b-card-container {
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); 5 cards per row */
+  grid-template-columns: auto auto auto auto auto;
+  gap: 7px;
+  /* Adjust gap as needed */
+  justify-content: space-evenly;
+  object-fit: cover;
+
+}
+
+.card-items {
+  max-width: 200px;
+  /* margin-left: 22px; */
+  text-align: left;
+}
+
+.card-items:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.card-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item-title {
+  color: #eb9c5c;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Courgette;
+
+}
+
+.card-item-description {
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+/* ------------------------------- */
+.mrp {
+  text-decoration: line-through;
+}
+/* -----------------Aboutus.jsx-------------- */
+.about{
+  margin: 0px 90px;
+  padding-top: 30px;
+  box-sizing: inherit;
+}
+.about-h{
+  display: inline-block;
+  position: relative;
+}
+.about-h::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  right: 0;
+  background-color: #eb9c5c;
+  transform-origin: top left; /*rightn  left lek povaan */
+  transition: transform 1s ease-out;
+}
+.about-h:hover::before{
+  transform: scaleX(1);
+  transform-origin: top left;
+}
+.about-h::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;  /* t*/
+  background-color: #eb9c5c;
+  transform-origin: bottom right;
+  transition: transform 1s  ease-out;   
+}
+.about-h:hover::after{
+  transform: scaleX(1);
+  transform-origin: top right;
+}
+.about-body{
+  padding-top: 30px;
+  display: block;
+  word-spacing: 7px;
+}
+.para1{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
+}
+.para2{
+  text-align: justify;
+  text-align-last: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.para3{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
+  padding-top: 20px;
+}
+.para3::after{
+  content: "#Happy Shopping with Saylore.";
+  color: #ee9953;
+}
+.para3:hover::after{
+  color: #53917e;
+}
+/* ----------------AboutUs-ends-here-------------------------------- */
+/* ----------------------Offers------------------------- */
+.offersss{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  /* margin-top: 20px; */
+}
+.offers-head{
+  display: flex;
+  margin: 0px 30px;
+  /* background-color: #efebbf; */
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  position: relative;
+}
+.offers-img{
+  position: absolute;
+ margin-left: 500px;
+}
+.offers-img img{
+  max-width: 100%;
+  height: auto;
+}
+.offers-text{
+  margin-left: 20px;
+  font-family: monospace;
+  display: flex;
+  justify-content: left;
+}
+.offers-text::before {
+  content: 'Saylore Offers';
+  max-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 60px;
+  animation: typing 3s steps(var(--characters)) forwards;
+}
+
+.offers-text::after{
+  content: " ";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+:root {
+  --characters: 13; /* Adjust the number based on the text length */
+}
+
+@keyframes typing {
+ 100% {
+      max-width: calc(var(--characters) * 1ch);
+  }
+}
+@keyframes blink {
+  0%, 75%, 100% {
+      opacity: 1;
+  }
+  25% {
+      opacity: 0;
+  }
+}
+
+
+.wrapper {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+  height: 419px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+  display: flex;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  height: 20px;
+  font-family: 'Trocchi', serif;
+  font-size: 27px;
+  font-weight: lighter;
+  color: #474747;
+  margin-left: 20px;
+}
+
+.offer-span{
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  /* float: right; */
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+}
+/* --------offer-ends-here--------------------- */
+/* ------------Gift.jsx--------------------------- */
+.gif-ideas{
+  padding-top: 40px;
+}
+.gif-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gif-body h2{
+  padding-bottom: 100px;
+  font-size: 34px;
+
+}
+.gif-p{
+  word-spacing: 7px;
+  margin-bottom: 90px;
+  font-size: 22px;
+}
+.gif-img img{
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
